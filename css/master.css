@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62,5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: inherit;
+    background-color: #1869FF;
+    color: black;
+}
+
+.header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header__heading {
+    margin-top: 32px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0.03125in 0.1875pc 0.625pc black;
+    color: #ff0;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.header__sub-heading {
+    width: 100%;
+    text-align: center;
+
+    margin-top: 32px;
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-shadow: 0.03125in 0.1875pc 0.625pc black;
+}
+
+.container {
+    margin-top: 32px;
+}
+
+.container__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.container__header select {
+    width: 400px;
+    height: 32px;
+}
+
+.container__header select:focus {
+    outline: none;
+}
+
+.container__header select * {
+    height: 32px;
+}
+
+.container__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px;
+}
+
+.forecast-list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-item.now {
+    border: 2px solid rgb(198, 12, 255);
+}
+
+.forecast-item {
+    min-width: 160px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 12px;
+    border-radius: 4px;
+
+}
+
+
+.weather-date {
+    font-size: 1.2rem;
+    color: #1869FF;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.weather-icon {
+    margin: 8px 0;
+  /* padding-left: 50%; */
+}
+
+.weather-description {
+    margin-top: 4px;
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.weather-temperatures {
+    margin-top: 4px;
+    font-size: 1rem;
+
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 4px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer a {
+    color: #ff0;
+}
+
+
+
+
+
+
+
+
+/* Loading */
+#loader {
+    border: 16px solid #f3f3f3;
+   /* Light grey */
+    border-top: 16px solid #3498db;
+   /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
